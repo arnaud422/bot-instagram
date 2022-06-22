@@ -1,0 +1,29 @@
+{
+  "name": "bot-instagram",
+  "version": "1.0.0",
+  "description": "message intagram automatic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnaud422/bot-instagram.git"
+  },
+  "keywords": [
+    "Arnaud",
+    "Drison",
+    "instagram",
+    "bot"
+  ],
+  "author": "Arnaud Drison",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arnaud422/bot-instagram/issues"
+  },
+  "homepage": "https://github.com/arnaud422/bot-instagram#readme",
+  "dependencies": {
+    "@androz2091/insta.js": "^1.6.1",
+    "commander": "^9.3.0"
+  }
+}
