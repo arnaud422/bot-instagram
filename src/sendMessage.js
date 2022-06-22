@@ -1,7 +1,7 @@
 import Insta from '@androz2091/insta.js';
 
-const username = "anonymousbelgique"
-const password = "Carrefour2604"
+const username = ""
+const password = ""
 
 const client = new Insta.Client();
 

@@ -2,7 +2,8 @@
   "name": "bot-instagram",
   "version": "1.0.0",
   "description": "message intagram automatic",
-  "main": "index.js",
+  "main": "./src/index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +25,7 @@
   "homepage": "https://github.com/arnaud422/bot-instagram#readme",
   "dependencies": {
     "@androz2091/insta.js": "^1.6.1",
+    "chalk": "^5.0.1",
     "commander": "^9.3.0"
   }
 }

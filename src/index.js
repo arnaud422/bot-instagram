@@ -9,18 +9,17 @@ program
 .description("Bot de message instagram");
 
 program
-.command("connect")
-.description("add a task")
-.argument("<username>", "The instagram Username", valueIsNotEmpty)
-.argument("<paswword>", "The instagram password", valueIsNotEmpty)
-.action((username, password) => {
-    console.log(chalk.dim("start"))
-    try {
-        console.log(username, password)
-      } catch (e) {
-        console.log(chalk.red("ERROR..."))
-      }
-    });
+  .command("connect")
+  .description("Connect to instagram")
+  .argument("<username>", "The instagram username", valueIsNotEmpty)
+  .argument("<password>", "The instagram username", valueIsNotEmpty)
+  .action((username, password) => {
+    console.log(username, password)
+    }
+  );
+
+
+  program.parse();
 
 function valueIsNotEmpty(value){
     if(value === ""){
