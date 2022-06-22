@@ -1,22 +1,25 @@
 import Insta from '@androz2091/insta.js';
 
-const username = ""
-const password = ""
 
-const client = new Insta.Client();
+export function loginInstagram(username, password){
 
-client.on('connected', () => {
-    console.log(`Logged in as ${client.user.username}`);
-});
+    const client = new Insta.Client();
 
-client.on('messageCreate', (message) => {
-    if (message.author.id === client.user.id) return
+    client.on('connected', () => {
+        console.log(`Logged in as ${client.user.username}`);
+    });
 
-    message.markSeen();
+    client.on('messageCreate', (message) => {
+        if (message.author.id === client.user.id) return
 
-    if (message.content === '!ping') {
-        message.reply('!pong');
-    }
-});
+        message.markSeen();
 
-client.login(username, password);
+        if (message.content === '!ping') {
+            message.reply('!pong');
+        }
+    });
+
+    client.login(username, password);
+
+}
+

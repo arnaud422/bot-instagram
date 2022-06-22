@@ -1,6 +1,6 @@
 import { Command, InvalidArgumentError } from "commander";
 import { createFileLogin } from "./commands.js";
-import Insta from '@androz2091/insta.js';
+import { loginInstagram } from "./sendMessage.js";
 import chalk from "chalk";
 
 const program = new Command();
@@ -20,6 +20,7 @@ program
     if (!isLogin) {
       console.log(chalk.red("Error creating connection file"));
     } else {
+      loginInstagram(username, password)
     }
   });
 
